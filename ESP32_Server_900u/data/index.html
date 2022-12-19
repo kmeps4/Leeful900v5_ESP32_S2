@@ -1,5 +1,9 @@
 <html>
+<<<<<<< Updated upstream
 <title>Leeful 9.00 Test v5.0 [GoldHEN v2.2.4]</title>
+=======
+<title>Leeful 9.00 Test v5.0 [GoldHEN v2.2.5b8]</title>
+>>>>>>> Stashed changes
 <link rel="shortcut icon" href="favicon.ico"></link>
 <style>
 body{background: linear-gradient(to bottom right, #063FAB, #01258A);color:white;font-size:28px;text-align:center;margin:0;overflow:hidden;}
@@ -92,7 +96,6 @@ body{background: linear-gradient(to bottom right, #063FAB, #01258A);color:white;
          if (chain.syscall(23, 0).low != 0x0) {
           localStorage.HenLoaded="no";
           kernelExploit();
-          //alert("\n\nNow remove the USB drive then click OK to continue");
          }
          if (chain.syscall(23, 0).low == 0) {
           if(localStorage.HenLoaded=="yes" && sessionStorage.HenLoaded!="yes"){setTimeout(runBinLoader,500);}
@@ -118,7 +121,11 @@ body{background: linear-gradient(to bottom right, #063FAB, #01258A);color:white;
         function loadPayload(){
          var req = new XMLHttpRequest();
          req.responseType = "arraybuffer";
+<<<<<<< Updated upstream
          req.open('GET','pl_goldhen224.bin');
+=======
+         req.open('GET','pl_goldhen225b8.bin');
+>>>>>>> Stashed changes
          req.send();
          req.onreadystatechange = function () {
           if (req.readyState == 4) {
